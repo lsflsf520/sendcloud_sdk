@@ -106,4 +106,14 @@
 		</plugins>
 	</build>
 
+    <distributionManagement>
+		<snapshotRepository>
+			<id>snaphosts</id>
+			<url>http://nexus.baoxianjie.net/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>releases</id>
+			<url>http://nexus.baoxianjie.net/nexus/content/repositories/releases/</url>
+		</repository>
+	</distributionManagement>
 </project>
