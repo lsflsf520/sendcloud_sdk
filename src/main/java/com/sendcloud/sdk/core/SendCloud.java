@@ -239,7 +239,7 @@ public class SendCloud {
 		params.add(new BasicNameValuePair("apiUser", credential.getApiUser()));
 		params.add(new BasicNameValuePair("apiKey", credential.getApiKey()));
 		params.add(new BasicNameValuePair("from", mail.getBody().getFrom()));
-		params.add(new BasicNameValuePair("fromname", mail.getBody().getFromName()));
+		params.add(new BasicNameValuePair("fromName", mail.getBody().getFromName()));
 		params.add(new BasicNameValuePair("subject", mail.getBody().getSubject()));
 		params.add(new BasicNameValuePair("replyTo", mail.getBody().getReplyTo()));
 		if (mail.getBody().getLabelId() != null)
@@ -317,7 +317,7 @@ public class SendCloud {
 		entity.addTextBody("apiKey", credential.getApiKey(), TEXT_PLAIN);
 		entity.addTextBody("from", mail.getBody().getFrom(), TEXT_PLAIN);
 		if (StringUtils.isNotEmpty(mail.getBody().getFromName()))
-			entity.addTextBody("fromname", mail.getBody().getFromName(), TEXT_PLAIN);
+			entity.addTextBody("fromName", mail.getBody().getFromName(), TEXT_PLAIN);
 		entity.addTextBody("subject", mail.getBody().getSubject(), TEXT_PLAIN);
 		if (StringUtils.isNotEmpty(mail.getBody().getReplyTo()))
 			entity.addTextBody("replyTo", mail.getBody().getReplyTo(), TEXT_PLAIN);
